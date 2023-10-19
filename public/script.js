@@ -50,6 +50,14 @@ btn1.addEventListener('click', () => {
     btn1.textContent = 'White Mode'
 
 })
+// Enable dark mode by default
+const DarkModeByDefault = ()=>{
+    document.querySelectorAll('*').forEach((el) => {
+        el.classList.add('dark-mode')
+    })
+    btn1.textContent = 'White Mode'
+}
+DarkModeByDefault()
 
 // Course Title: Numerical Analysis
 addDataToMain("Course Title: Numerical Analysis", `
@@ -183,7 +191,9 @@ addDataToMain("Course Title: Numerical Analysis", `
         </li>
     </ol>
 `);
+//close btn
 document.querySelector('.close-btn').addEventListener('click',(e)=>{
     document.getElementById('close-btn').style.display = 'none';
+    
 })
 resize()
