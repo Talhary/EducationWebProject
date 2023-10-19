@@ -50,9 +50,6 @@ btn1.addEventListener('click', () => {
     btn1.textContent = 'White Mode'
 
 })
-// I. Introduction
-
-// Course Title: Numerical Analysis
 
 // Course Title: Numerical Analysis
 addDataToMain("Course Title: Numerical Analysis", `
@@ -186,4 +183,7 @@ addDataToMain("Course Title: Numerical Analysis", `
         </li>
     </ol>
 `);
+document.querySelector('.close-btn').addEventListener('click',(e)=>{
+    document.getElementById('close-btn').style.display = 'none';
+})
 resize()

@@ -213,3 +213,6 @@ aside {
     color: var(--text-color);
     background-color: red;
 }
+.close-btn{
+    cursor: pointer;
+}
