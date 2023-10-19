@@ -50,4 +50,138 @@ btn1.addEventListener('click', () => {
     btn1.textContent = 'White Mode'
 
 })
-addDataToMain('Bold Text', '<b> this is bold text </b>')
+// I. Introduction
+
+// Course Title: Numerical Analysis
+addDataToMain("Course Title: Numerical Analysis", `
+    <strong>Course Outline:</strong>
+    <ol>
+        <li><strong>I. Introduction</strong>
+            <ul>
+                <li>Overview of Numerical Analysis</li>
+                <li>Importance of Numerical Methods</li>
+                <li>Applications in Science and Engineering</li>
+            </ul>
+        </li>
+
+        <li><strong>II. Computer Arithmetic</strong>
+            <ul>
+                <li>Number Systems (Binary, Octal, Hexadecimal)</li>
+                <li>Conversion between Number Systems</li>
+                <li>Binary Arithmetic</li>
+            </ul>
+        </li>
+
+        <li><strong>III. Errors and Their Types</strong>
+            <ul>
+                <li>Sources of Errors in Numerical Computations</li>
+                <li>Absolute and Relative Errors</li>
+                <li>Types of Errors: Truncation and Round-off Errors</li>
+            </ul>
+        </li>
+
+        <li><strong>IV. Floating Point Arithmetic</strong>
+            <ul>
+                <li>IEEE 754 Standard for Floating Point Representation</li>
+                <li>Rounding Errors in Floating-Point Operations</li>
+                <li>Overflow and Underflow</li>
+            </ul>
+        </li>
+
+        <li><strong>V. Nonlinear Equations</strong>
+            <ul>
+                <li>Introduction to Nonlinear Equations</li>
+                <li>Direct and Indirect Methods for Solving Nonlinear Equations</li>
+                <li>Intermediate Value Theorem</li>
+            </ul>
+        </li>
+
+        <li><strong>VI. Iterative Methods for Nonlinear Equations</strong>
+            <ul>
+                <li>Secant Method</li>
+                <li>Regula-Falsi Method</li>
+                <li>Newton-Raphson Method</li>
+                <li>Iterative Methods Based on Second Degree Equations</li>
+                <li>Rate of Convergence for Iterative Methods</li>
+            </ul>
+        </li>
+
+        <li><strong>VII. General Iterative Methods</strong>
+            <ul>
+                <li>First, Second, and Higher Order Iterative Methods</li>
+                <li>Acceleration of Convergence Techniques</li>
+                <li>Methods for Handling Multiple Roots</li>
+            </ul>
+        </li>
+
+        <li><strong>VIII. System of Nonlinear Equations</strong>
+            <ul>
+                <li>Introduction to Systems of Nonlinear Equations</li>
+                <li>Methods for Solving Systems of Nonlinear Equations</li>
+            </ul>
+        </li>
+
+        <li><strong>IX. Polynomial Equations</strong>
+            <ul>
+                <li>Techniques for Solving Polynomial Equations</li>
+            </ul>
+        </li>
+
+        <li><strong>X. System of Linear Algebraic Equations</strong>
+            <ul>
+                <li>Introduction to Linear Algebraic Equations</li>
+                <li>Direct Methods:
+                    <ul>
+                        <li>Gauss Elimination Methods with Partial and Complete Pivoting</li>
+                        <li>Gauss-Jordan Elimination Method</li>
+                    </ul>
+                </li>
+                <li>Triangularization Methods:
+                    <ul>
+                        <li>Doolittle’s Method</li>
+                        <li>Crout’s Method</li>
+                        <li>Cholesky Method</li>
+                    </ul>
+                </li>
+                <li>Partition Methods</li>
+                <li>Indirect Methods:
+                    <ul>
+                        <li>Jacobi Iteration Method</li>
+                        <li>Gauss-Seidel Iteration Method</li>
+                        <li>Successive Overrelaxation (SOR) Method</li>
+                    </ul>
+                </li>
+                <li>Convergence of Iterative Methods</li>
+                <li>Optimal Relaxation Parameter for SOR Method</li>
+            </ul>
+        </li>
+
+        <li><strong>XI. Solution of Tridiagonal Systems</strong></li>
+
+        <li><strong>XII. Interpolation</strong>
+            <ul>
+                <li>Introduction to Interpolation</li>
+                <li>Finite Difference Operators:
+                    <ul>
+                        <li>Forward, Backward, Central Differences</li>
+                        <li>Shift, Average, and Differential Operators</li>
+                    </ul>
+                </li>
+                <li>Differences of a Polynomial</li>
+                <li>Factorial Polynomials</li>
+                <li>Error Propagation in Difference Tables</li>
+                <li>Summation of Series</li>
+                <li>Newton’s Formulae for Interpolation</li>
+                <li>Interpolation with Unequally Spaced Data:
+                    <ul>
+                        <li>Lagrange’s Formula and Its Error</li>
+                        <li>Hermite’s Interpolation Formula</li>
+                        <li>Divided Differences and Their Properties</li>
+                        <li>Newton’s General Interpolation Formula</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
+`);
+resize()
