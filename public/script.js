@@ -50,4 +50,4 @@ btn1.addEventListener('click', () => {
     btn1.textContent = 'White Mode'
 
 })
-addDataToMain('lol', 'ksfkjskjk')
+addDataToMain('Bold Text', '<b> this is bold text </b>')
