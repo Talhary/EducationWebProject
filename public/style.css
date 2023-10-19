@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: 'Flamenco', cursive;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.transition-class {
+    transition: all 0.3s ease;
+    /* Added transition for all properties */
+}
+
+img {
+    margin-top: 3em;
+    width: 80%;
+    object-fit: cover;
+}
+
+:root {
+    --primary-blue: #007BFF;
+    --secondary-blue: #0056b3;
+    --light-gray: #f5f5f5;
+    --dark-gray: #c2c2c2;
+    --white: #ffffff;
+    --background-color: #f5f5f5;
+    --text-color: #333333;
+    --link-color: #007BFF;
+    --link-hover-color: #0056b3;
+    --paragraph-background-color: #ffffff;
+    --paragraph-text-color: #333333;
+    --heading-color: #333333;
+    --body-background-color: rgb(211, 211, 211);
+    --btns-padding: 0.3em 0.4em;
+    --container-backgroud-color: rgb(226, 226, 226);
+}
+
+body {
+    width: 100%;
+
+}
+
+.dark-mode {
+    --paragraph-background-color: #333333;
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --paragraph-text-color: white;
+    --light-gray: #333333;
+    --body-background-color: rgb(31, 30, 30);
+    --dark-gray: rgb(121, 121, 121);
+    --container-backgroud-color: rgb(41, 40, 40);
+}
+
+header {
+    position: fixed;
+    bottom: 1%;
+    width: 96%;
+    left: 2%;
+    z-index: 100;
+    background-color: var(--background-color);
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-between;
+    color: var(--text-color);
+
+    border-radius: 5px;
+}
+
+button,
+.input-text-for-search {
+
+    white-space: nowrap;
+    overflow: hidden;
+    color: var(--text-color);
+    font-size: 0.7em;
+    border: none;
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    margin: 0.2em;
+    padding: var(--btns-padding)
+}
+
+.container {
+    margin: 1em 0;
+    background-color: var(--container-backgroud-color);
+    padding: 0.1em;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.right {
+    width: 100%;
+    margin-right: 0.5em;
+}
+
+.left {
+    font-size: 1rem;
+    margin-right: 1em;
+
+}
+
+.inside-btn {
+    position: relative;
+    margin: 0.3em 0.4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.indicator {
+    position: absolute;
+    top: 0.15em;
+
+    right: 7.3em;
+    /* Adjust the right offset as needed */
+}
+
+.indicate {
+    position: relative;
+}
+
+.indicator::before {
+    background-color: var(--dark-gray);
+    content: "";
+    width: 0.1em;
+    height: 1.2em;
+    position: absolute;
+    right: 50%;
+    /* Adjust the position within the indicator as needed */
+
+    top: 0.2em;
+    /* Adjust the top offset as needed */
+}
+
+.inside-input-search-btn {
+
+
+    position: absolute;
+    right: 0.2em;
+    padding: 0.1em;
+    top: 0.15em;
+
+    border: 1px solid var(--dark-gray);
+    /* Set the border style and colo    r */
+    border-radius: 4px;
+}
+
+.close-btn {
+    position: fixed;
+    top: 0px;
+
+}
+
+.material-symbols-outlined[type=close] {
+
+    font-size: 20px;
+    color: var(--text-color);
+    right: 44vw;
+    z-index: 1000;
+    position: fixed;
+    bottom: 13vh;
+}
+
+.slide {
+    right: 48vw;
+    z-index: 1000;
+    position: fixed;
+    bottom: 11vh;
+    color: var(--text-color);
+    ;
+
+}
+
+main {
+    position: relative;
+    overflow: auto;
+    width: 95%;
+    margin: 0.5em auto;
+}
+
+body {
+    background-color: var(--body-background-color);
+}
+
+h1 {
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    padding: 0.5em 1em;
+    display: inline-block;
+    margin: 0.2em;
+    border-radius: 5px;
+}
+
+p {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-text-color);
+    font-size: 0.8rem;
+    padding: 0.8em 1.5em;
+    margin: 0.2em;
+    border-radius: 5px;
+}
+
+aside {
+    color: var(--text-color);
+    background-color: red;
+}
